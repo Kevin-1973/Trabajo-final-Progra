@@ -1,7 +1,7 @@
 
 package Controlador;
 
-import com.mysql.jdbc.Connection;
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
@@ -20,7 +20,11 @@ public class conectar {
    Class.forName(driver);
   conec = (Connection)DriverManager.getConnection(url, usuario, password);
       if (conec != null) {
+
       JOptionPane.showMessageDialog(null,"Coneccion yyestablecida");
+
+      JOptionPane.showMessageDialog(null,"Coneccion establecida");
+
      
       }
   }catch(ClassNotFoundException | SQLException e){
