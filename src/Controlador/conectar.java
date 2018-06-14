@@ -21,7 +21,7 @@ public class conectar {
   conec = (Connection)DriverManager.getConnection(url, usuario, password);
       if (conec != null) {
       JOptionPane.showMessageDialog(null,"Coneccion establecida");
-       JOptionPane.showMessageDialog(null,"se pudo");
+     
       }
   }catch(ClassNotFoundException | SQLException e){
     JOptionPane.showMessageDialog(null,"Error al conectar"+e);
